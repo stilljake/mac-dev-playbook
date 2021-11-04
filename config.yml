@@ -38,11 +38,14 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+    - 1password
+    - google-cloud-sdk
     - ngrok
     - sublime-text
     - docker
-    - Google Chrome
+    - google-chrome
     - iterm2
+    - parallels
     - postman
     - spectacle
     - visual-studio-code
