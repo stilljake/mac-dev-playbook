@@ -1,14 +1,35 @@
 ---
-configure_dotfiles: true
+configure_dotfiles: false
+configure_osx: false
+configure_sudoers: false
+configure_terminal: false
+
 configure_dock: true
 dockitems_remove:
-  - TV
+  - Contacts
+  - Facetime
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - Photos
   - Podcasts
+  - Reminders
+  - TV
 
 homebrew_installed_packages:
+  - awscli
   - git
+  - git-lfs
+  - go
+  - hub
+  - iperf3
   - nmap
   - openssl
+  - pyenv
+  - pyenv-virtualenv
+  - terraform
+  - warrensbox/tap/tfswitch
   - wget
 
 homebrew_taps:
@@ -17,8 +38,13 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - firefox
-  - docker
-  - sublime-text
+    - ngrok
+    - sublime-text
+    - docker
+    - Google Chrome
+    - iterm2
+    - postman
+    - spectacle
+    - visual-studio-code
 
-configure_sublime: true
+configure_sublime: false
