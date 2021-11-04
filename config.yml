@@ -28,7 +28,6 @@ homebrew_installed_packages:
   - openssl
   - pyenv
   - pyenv-virtualenv
-  - terraform
   - warrensbox/tap/tfswitch
   - wget
 
