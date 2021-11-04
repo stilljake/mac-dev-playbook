@@ -1,0 +1,24 @@
+---
+configure_dotfiles: true
+configure_dock: true
+dockitems_remove:
+  - TV
+  - Podcasts
+
+homebrew_installed_packages:
+  - git
+  - nmap
+  - openssl
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - firefox
+  - docker
+  - sublime-text
+
+configure_sublime: true
