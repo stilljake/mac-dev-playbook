@@ -21,16 +21,16 @@ homebrew_installed_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-#  - 1password
+  # - 1password
   - google-cloud-sdk
   - ngrok
   - sublime-text
   - docker
-#  - google-chrome
+  # - google-chrome
   - iterm2
   - parallels
   - postman
-#  - spectacle
+  # - spectacle
   - visual-studio-code
 
 configure_dotfiles: true
