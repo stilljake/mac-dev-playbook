@@ -9,14 +9,14 @@
 - name: Ensure custom Terminal profile is added.
   copy:
     src: files/terminal/{{ terminal_profile }}.terminal
-    dest: /tmp/JJG-Term.terminal
+    dest: /tmp/{{ terminal_profile }}.terminal
   changed_when: false
-  when: "'{{ terminal_profile }}' not in terminal_theme.stdout"
+  when: "terminal_profile not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is added.
   command: open /tmp/{{ terminal_profile }}.terminal
   changed_when: false
-  when: "'{{ terminal_profile }}' not in terminal_theme.stdout"
+  when: "terminal_profile not in terminal_theme.stdout"
 
 # TODO: This doesn't work in Yosemite. Consider a different solution?
 - name: Ensure custom Terminal profile is set as default.
@@ -25,4 +25,4 @@
     - defaults write com.apple.terminal 'Default Window Settings' -string {{ terminal_profile }}
     - defaults write com.apple.terminal 'Startup Window Settings' -string {{ terminal_profile }}
   changed_when: false
-  when: "'{{ terminal_profile }}' not in terminal_theme.stdout"
+  when: "terminal_profile not in terminal_theme.stdout"

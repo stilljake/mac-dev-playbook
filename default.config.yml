@@ -72,6 +72,7 @@ sudoers_custom_config: ''
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
 configure_terminal: true
+terminal_profile: "JT-Term"
 
 configure_osx: true
 osx_script: "~/.osx --no-restart"
