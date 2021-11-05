@@ -1,5 +1,6 @@
 
-export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
+# Cant seem to export path so need to do this manually
+# export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 
 xcode:
 	xcode-select --install
