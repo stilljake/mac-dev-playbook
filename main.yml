@@ -45,9 +45,16 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+      # Install zsh plugins if dotfiles are being configured
+    - import_tasks: tasks/zsh.yml
+      when: configure_dotfiles
+      tags: ['dotfiles']
+
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
       loop_control:
         loop_var: outer_item
       with_fileglob: "{{ post_provision_tasks|default(omit) }}"
       tags: ['post']
+
+
