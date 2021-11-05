@@ -96,6 +96,7 @@ pip_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 
+configure_zsh: true
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false

@@ -1,8 +1,5 @@
 ---
 # TODO: Use sudo once .osx can be run via root with no user interaction.
-- name: Make .osx executable
-  file: dest=~/.osx mode=+x
-
 - name: Run .osx dotfiles.
   command: "{{ osx_script }}"
   changed_when: false
