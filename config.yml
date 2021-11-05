@@ -16,7 +16,7 @@ homebrew_installed_packages:
   - pyenv-virtualenv
   - warrensbox/tap/tfswitch
   - wget
-
+  # - zsh-syntax-highlighting
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -32,11 +32,12 @@ homebrew_cask_apps:
   - spectacle
   - visual-studio-code
 
-configure_dotfiles: false
+configure_dotfiles: true
 dotfiles_repo: https://github.com/stilljake/dotfiles
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .osx
+  - .zsh
 
 configure_dock: true
 dockitems_remove:
