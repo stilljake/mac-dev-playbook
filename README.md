@@ -1,4 +1,4 @@
-# Setup
+# Setup My Mac
 
 My fork of [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
 
