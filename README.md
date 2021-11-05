@@ -1,6 +1,6 @@
 # Setup
 
-My fork of [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)geerlingguy/mac-dev-playbook
+My fork of [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
 
 ## Installation
 
