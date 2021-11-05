@@ -1,21 +1,7 @@
 ---
-configure_dotfiles: false
-configure_osx: false
-configure_sudoers: false
-configure_terminal: false
-
-configure_dock: true
-dockitems_remove:
-  - Contacts
-  - Facetime
-  - Mail
-  - Maps
-  - Messages
-  - Music
-  - Photos
-  - Podcasts
-  - Reminders
-  - TV
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
 
 homebrew_installed_packages:
   - awscli
@@ -31,22 +17,44 @@ homebrew_installed_packages:
   - warrensbox/tap/tfswitch
   - wget
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-    - 1password
-    - google-cloud-sdk
-    - ngrok
-    - sublime-text
-    - docker
-    - google-chrome
-    - iterm2
-    - parallels
-    - postman
-    - spectacle
-    - visual-studio-code
+  - 1password
+  - google-cloud-sdk
+  - ngrok
+  - sublime-text
+  - docker
+  - google-chrome
+  - iterm2
+  - parallels
+  - postman
+  - spectacle
+  - visual-studio-code
+
+configure_dotfiles: false
+dotfiles_repo: https://github.com/stilljake/dotfiles
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_files:
+  - .osx
+
+configure_dock: true
+dockitems_remove:
+  - Contacts
+  - Facetime
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - Photos
+  - Podcasts
+  - Reminders
+  - TV
+
+configure_sudoers: false
+
+configure_terminal: true
+
+configure_osx: true
 
 configure_sublime: false
