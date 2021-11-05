@@ -5,18 +5,18 @@ My fork of [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev
 ## Installation
 
 ```bash
-# Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
+# Ensure Apple's command line tools are installed.
 xcode-select --install
 
-# Install Ansible
-export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
-sudo pip3 install --upgrade pip
-pip3 install ansible
-
-# Run Playbook
+# Clone this repo and change in to it
+git clone https://github.com/stilljake/setup-my-mac.git
 cd setup-my-mac
-ansible-galaxy install -r requirements.yml
-ansible-playbook main.yml --ask-become-pass
+
+# Add Python 3 to $PATH
+export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
+
+# Run playbook
+make run
 ```
 
 
