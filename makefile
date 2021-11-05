@@ -9,7 +9,7 @@ ansible:
 	sudo pip3 install --upgrade pip
 	pip3 install ansible
 
-requirements:
+requirements: | ansible
 	ansible-galaxy install -r requirements.yml
 
 run: | requirements
