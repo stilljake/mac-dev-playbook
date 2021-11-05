@@ -51,7 +51,7 @@ mas_password: ""
 configure_dock: true
 dockitems_remove:
   - Contacts
-  - Facetime
+  - FaceTime
   - Mail
   - Maps
   - Messages
