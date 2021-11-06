@@ -45,7 +45,7 @@
       when: configure_sublime
       tags: ['sublime-text']
 
-      # Install zsh plugins if dotfiles are being configured
+      # Install zsh plugins
     - import_tasks: tasks/zsh.yml
       when: configure_zsh
       tags: ['zsh']
