@@ -1,9 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+homebrew_taps: []
 
 homebrew_installed_packages:
   - awscli
@@ -22,16 +20,12 @@ homebrew_installed_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - 1password
   - google-cloud-sdk
   - ngrok
   - sublime-text
   - docker
-  - google-chrome
   - iterm2
-  - parallels
   - postman
-  - slack
   - spectacle
   - visual-studio-code
 
