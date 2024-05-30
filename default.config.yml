@@ -17,6 +17,12 @@ homebrew_installed_packages:
   - warrensbox/tap/tfswitch
   - wget
   - yamllint
+  - terraform
+  - terramate
+  - terraform-docs
+  - helm
+  - minikube
+  - node
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -28,6 +34,7 @@ homebrew_cask_apps:
   - postman
   - spectacle
   - visual-studio-code
+  - warp
 
 configure_dotfiles: true
 dotfiles_repo: https://github.com/stilljake/dotfiles
